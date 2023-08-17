@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Automated Typewriter</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Auto Typewriter</h1>
+<button class="header" role="button" onclick="typeWriter()">Click me&#128150;</button>   
+<p id="demo">
+</p>
+<script>
+var i = 0;
+var txt = 'For more creative responsive website, like BTS-music play, netflix anime, landing page, background media queries and double image slider follow me on my Github account Akshayadeveloper https://www.github.com/Akshayadeveloper.';
+var speed = 50;
+function typeWriter() {
+  if (i < txt.length) {
+document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</body>
+</html>
